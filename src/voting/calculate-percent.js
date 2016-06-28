@@ -1,6 +1,4 @@
 export default function calculatePercent(numerator, denominator) {
-  const decimal = (numerator / denominator);
-  const percent = (decimal * 100);
-
+  const percent = `${Math.round((numerator / denominator) * 100)}%`;
   return percent;
 }
