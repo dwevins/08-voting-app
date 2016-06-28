@@ -64,5 +64,5 @@ test('it can increment the votes for an option in the poll', (assert) => {
 
   assert.deepEqual(start, [{ name: 'Foo', votes: 0 }], 'Don\'t change the value of passed in array');
   assert.deepEqual(result, [{ name: 'Foo', votes: 1 }]);
-  assert.deepEqual(resultTwo, [{ name: 'Foo', votes: 1 }, { name: 'Bar', votes: 3 }]);
+  assert.deepEqual(resultTwo, [{ name: 'Foo', votes: 2 }, { name: 'Bar', votes: 3 }]);
 });
