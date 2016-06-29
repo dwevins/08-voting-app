@@ -6,9 +6,8 @@ export default function incrementVote(options, optionIndex) {
     newOption = { name: `${options[i].name}`, votes: options[i].votes };
     localOptions.push(newOption);
   }
-  for (let i = 0; i < localOptions.length; i++) {
-    localOptions[i].votes += 1;
-  }
+
+  localOptions[optionIndex].votes++;
 
   return localOptions;
 }
