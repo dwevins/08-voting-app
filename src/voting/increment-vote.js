@@ -1,4 +1,4 @@
-export default function incrementVote(options) {
+export default function incrementVote(options, optionIndex) {
   const localOptions = [];
   let newOption = {};
 
